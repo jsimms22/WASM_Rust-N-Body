@@ -4,7 +4,8 @@
   "description": "A skeleton app showing how to use Rust to leverage Wasm in your React app.",
   "main": "src/index.jsx",
   "scripts": {
-    "dev": "webpack server"
+    "dev": "webpack server",
+    "build": "npx webpack"
   },
   "keywords": [],
   "author": "Josh Finnie <josh@jfin.us",
