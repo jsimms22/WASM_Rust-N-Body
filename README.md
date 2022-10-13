@@ -8,7 +8,7 @@ Hosting a Local Server
 
 $ npm run dev
 
-# Scripts Embedding in Package.json
+Scripts Embedded in Package.json
 
     "dev": "webpack server",
     "build:wasm": "cargo build --target wasm32-unknown-unknown",
