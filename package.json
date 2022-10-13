@@ -5,7 +5,9 @@
   "main": "src/index.jsx",
   "scripts": {
     "dev": "webpack server",
-    "build": "npx webpack"
+    "build:wasm": "cargo build --target wasm32-unknown-unknown",
+    "build:bindgen": "wasm-bindgen target/wasm32-unknown-unknown/debug/nbody_wasm.wasm --out-dir build",
+    "build": "npm run build:wasm && npm run build:bindgen && npx webpack"
   },
   "keywords": [],
   "author": "Josh Finnie <josh@jfin.us",
