@@ -4,11 +4,8 @@
 #package-lock.json
 
 # Production
-/target
 
 # Generated files
-/pkg
-/dist
 
 # Visual Studio files
 .vscode
