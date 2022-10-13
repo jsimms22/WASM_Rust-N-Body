@@ -1,0 +1,20 @@
+# Dependencies
+/node_modules
+#Cargo.lock
+#package-lock.json
+
+# Production
+/build
+/target
+
+# Generated files
+/pkg
+/dist
+
+# Visual Studio files
+.vscode
+
+# Rust Files
+
+
+
