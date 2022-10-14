@@ -10,8 +10,8 @@
     "build": "npm run build:wasm && npm run build:bindgen && npx webpack"
   },
   "keywords": [],
-  "author": "Josh Finnie <josh@jfin.us",
-  "license": "MIT",
+  "author": "Jeremiah Simmons",
+  "license": "",
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
