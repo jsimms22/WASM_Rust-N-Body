@@ -1,17 +1,69 @@
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <style>
-        html,
-        body {
-          background: black;
-          width: 100%;
-          height: 100%;
-          margin: 0px;
-          border: 0;
-          overflow: hidden;
-          display: block;
-        }
-    </style>
-  <script defer src="bundle.f6b70d2fec0329a3b107.js"></script></head>
-</html>
+<head><script defer src="bundle.a6b83bfa29ea714105dc.js"></script></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: Error: Can't resolve 'S:\Code\LearningRust\nbody_wasm\public\index.html' in 'S:\Code\LearningRust\nbody_wasm'
+  ModuleNotFoundError: Module not found: Error: Can't resolve 'S:\Code\LearningRust\nbody_wasm\public\index.html' in 'S:\Code\LearningRust\nbody_wasm'
+      at S:\Code\LearningRust\nbody_wasm\node_modules\webpack\lib\Compilation.js:2016:28
+      at S:\Code\LearningRust\nbody_wasm\node_modules\webpack\lib\NormalModuleFactory.js:798:13
+      at eval (eval at create (S:\Code\LearningRust\nbody_wasm\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
+      at S:\Code\LearningRust\nbody_wasm\node_modules\webpack\lib\NormalModuleFactory.js:270:22
+      at eval (eval at create (S:\Code\LearningRust\nbody_wasm\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at S:\Code\LearningRust\nbody_wasm\node_modules\webpack\lib\NormalModuleFactory.js:434:22
+      at S:\Code\LearningRust\nbody_wasm\node_modules\webpack\lib\NormalModuleFactory.js:116:11
+      at S:\Code\LearningRust\nbody_wasm\node_modules\webpack\lib\NormalModuleFactory.js:670:25
+      at S:\Code\LearningRust\nbody_wasm\node_modules\webpack\lib\NormalModuleFactory.js:855:8
+      at S:\Code\LearningRust\nbody_wasm\node_modules\webpack\lib\NormalModuleFactory.js:975:5
+  
+  - Compilation.js:2016 
+    [nbody_wasm]/[webpack]/lib/Compilation.js:2016:28
+  
+  - NormalModuleFactory.js:798 
+    [nbody_wasm]/[webpack]/lib/NormalModuleFactory.js:798:13
+  
+  
+  - NormalModuleFactory.js:270 
+    [nbody_wasm]/[webpack]/lib/NormalModuleFactory.js:270:22
+  
+  
+  - NormalModuleFactory.js:434 
+    [nbody_wasm]/[webpack]/lib/NormalModuleFactory.js:434:22
+  
+  - NormalModuleFactory.js:116 
+    [nbody_wasm]/[webpack]/lib/NormalModuleFactory.js:116:11
+  
+  - NormalModuleFactory.js:670 
+    [nbody_wasm]/[webpack]/lib/NormalModuleFactory.js:670:25
+  
+  - NormalModuleFactory.js:855 
+    [nbody_wasm]/[webpack]/lib/NormalModuleFactory.js:855:8
+  
+  - NormalModuleFactory.js:975 
+    [nbody_wasm]/[webpack]/lib/NormalModuleFactory.js:975:5
+  
+  - child-compiler.js:169 
+    [nbody_wasm]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+  
+  - Compiler.js:551 finalCallback
+    [nbody_wasm]/[webpack]/lib/Compiler.js:551:5
+  
+  - Compiler.js:577 
+    [nbody_wasm]/[webpack]/lib/Compiler.js:577:11
+  
+  - Compiler.js:1196 
+    [nbody_wasm]/[webpack]/lib/Compiler.js:1196:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [nbody_wasm]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1192 
+    [nbody_wasm]/[webpack]/lib/Compiler.js:1192:33
+  
+  - Compilation.js:2787 finalCallback
+    [nbody_wasm]/[webpack]/lib/Compilation.js:2787:11
+  
+  - Compilation.js:3092 
+    [nbody_wasm]/[webpack]/lib/Compilation.js:3092:11
+  
+  
+</pre>
