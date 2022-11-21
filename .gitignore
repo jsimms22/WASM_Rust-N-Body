@@ -1,11 +1,13 @@
 # Dependencies
 /node_modules
-#Cargo.lock
-#package-lock.json
 
 # Production
 
 # Generated files
+/build
+/dist
+/pkg
+/target
 
 # Visual Studio files
 .vscode
