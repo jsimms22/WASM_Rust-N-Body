@@ -106,7 +106,8 @@ fn setup_initial_state(
     mut particle_query: Query<(Entity, &mut Particle)>,
     mut ev_reset: EventReader<Reset>,
     settings: Res<Settings>, 
-    mut commands: Commands) 
+    mut commands: Commands,
+    stats: Res<Stats>) 
 {
     // Required for the start/restart operations to occur otherwise the game will infinitely add additional systems
     let mut manual_reset= false;
@@ -393,7 +394,7 @@ pub fn game() {
             .add_plugin(EguiPlugin) 
             .add_plugin(ShapePlugin)
             .add_plugin(PanCamPlugin::default())
-            .add_plugin(bevy_web_resizer::Plugin)
+            //.add_plugin(bevy_web_resizer::Plugin)
             .add_startup_system(spawn_camera)
             .add_system(verlet)
             .add_system(ui_box)
@@ -415,7 +416,7 @@ pub fn game() {
             .add_plugin(EguiPlugin) 
             .add_plugin(ShapePlugin)
             .add_plugin(PanCamPlugin::default())
-            .add_plugin(bevy_web_resizer::Plugin)
+            //.add_plugin(bevy_web_resizer::Plugin)
             .add_startup_system(spawn_camera)
             .add_system(verlet)
             .add_system(ui_box)
