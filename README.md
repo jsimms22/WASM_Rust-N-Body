@@ -28,11 +28,11 @@ First time set-up for up your local environment step-by-step:
 
 To build the Rust, WebAssembly, and JavaScript:
     
-    ```$ npm run build```
+   ```$ npm run build```
 
 Hosting a Local Server
     
-    ```$ npm run dev```
+   ```$ npm run dev```
 
 Scripts Embedded in Package.json
     
