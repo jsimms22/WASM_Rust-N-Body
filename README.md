@@ -43,4 +43,4 @@ Scripts Embedded in Package.json
 
 Note: if there is an error building the stdweb crate when building the wasm binary, make sure wasm-pack is installed
 
-    ```$ npm install -g wasm-pack```
+    $ npm install -g wasm-pack
