@@ -40,3 +40,7 @@ Scripts Embedded in Package.json
     "build:wasm": "cargo build --target wasm32-unknown-unknown",
     "build:bindgen": "wasm-bindgen target/wasm32-unknown-unknown/debug/nbody_wasm.wasm --out-dir build",
     "build": "npm run build:wasm && npm run build:bindgen && npx webpack"
+
+Note: if there is an error building the stdweb crate when building the wasm binary, make sure wasm-webpack is installed
+
+    ```$ npm install wasm-pack```
