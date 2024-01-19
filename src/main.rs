@@ -113,6 +113,11 @@ fn setup_initial_state(
 
     for _ in ev_reset.iter() {
         manual_reset = true;
+        if (manual_reset == true) {
+            for (entity_1, particle_1) in particle_query.iter() {
+                commands.entity(entity_1).despawn();
+            }
+        }
     }
 
     if manual_reset {    
@@ -393,7 +398,7 @@ pub fn game() {
             .add_plugin(EguiPlugin) 
             .add_plugin(ShapePlugin)
             .add_plugin(PanCamPlugin::default())
-            .add_plugin(bevy_web_resizer::Plugin)
+            //.add_plugin(bevy_web_resizer::Plugin)
             .add_startup_system(spawn_camera)
             .add_system(verlet)
             .add_system(ui_box)
@@ -415,7 +420,7 @@ pub fn game() {
             .add_plugin(EguiPlugin) 
             .add_plugin(ShapePlugin)
             .add_plugin(PanCamPlugin::default())
-            .add_plugin(bevy_web_resizer::Plugin)
+            //.add_plugin(bevy_web_resizer::Plugin)
             .add_startup_system(spawn_camera)
             .add_system(verlet)
             .add_system(ui_box)
