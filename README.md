@@ -15,7 +15,7 @@ First time set-up for up your local environment step-by-step:
     
 3) Build the Rust application to the target that was just added
     
-    ```$ cargo build --target wasm32-unknown-unknown```
+    ```$ cargo build --target wasm32-unknown-unknown --release```
 
 4) Install the wasm-bindgen-cli command-line application
     
