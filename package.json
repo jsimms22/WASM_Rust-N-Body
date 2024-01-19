@@ -5,8 +5,8 @@
   "main": "src/index.jsx",
   "scripts": {
     "dev": "webpack server",
-    "build:wasm": "cargo build --target wasm32-unknown-unknown",
-    "build:bindgen": "wasm-bindgen target/wasm32-unknown-unknown/debug/nbody_wasm.wasm --out-dir build",
+    "build:wasm": "cargo build --target wasm32-unknown-unknown --release",
+    "build:bindgen": "wasm-bindgen target/wasm32-unknown-unknown/release/nbody_wasm.wasm --out-dir build",
     "build": "npm run build:wasm && npm run build:bindgen && npx webpack"
   },
   "keywords": [],
